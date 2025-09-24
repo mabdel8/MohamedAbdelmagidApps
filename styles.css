@@ -1,0 +1,332 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+/* Hero Section */
+.hero {
+    background: #000;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Content Sections */
+.content {
+    padding: 80px 0;
+}
+
+.card {
+    margin-bottom: 60px;
+}
+
+.card h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    font-size: 1rem;
+    padding: 15px 30px;
+}
+
+.quick-links {
+    margin-top: 60px;
+}
+
+/* Privacy Policy Specific Styles */
+.policy-section {
+    margin-bottom: 40px;
+}
+
+.policy-section h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.policy-section h3 {
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.policy-section p, .policy-section ul, .policy-section li {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.policy-section ul {
+    padding-left: 20px;
+}
+
+.policy-section a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.policy-section a:hover {
+    opacity: 0.6;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+/* Support Page Specific Styles */
+.support-section {
+    margin-bottom: 60px;
+}
+
+.support-section h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.support-section p, .support-section ul, .support-section li {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.support-section ul {
+    padding-left: 20px;
+}
+
+.contact-card {
+    margin: 40px 0;
+}
+
+.contact-method h3 {
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.email-link {
+    color: #000;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.email-link:hover {
+    opacity: 0.6;
+}
+
+.support-list {
+    margin: 20px 0;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.topic-card {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+
+.topic-card h3 {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.topic-card p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cta-section {
+    background: #000;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cta-section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.cta-section .btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.cta-section .btn:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #000;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .content {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .content {
+        padding: 40px 0;
+    }
+    
+    .nav-container {
+        padding: 15px;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus,
+.btn:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
